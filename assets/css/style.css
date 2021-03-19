@@ -83,6 +83,10 @@ body {
   text-decoration: none;
 }
 
+.intro-footer-link:hover {
+  text-decoration: underline;
+}
+
 .btn {
   padding: 20px 40px;
   
