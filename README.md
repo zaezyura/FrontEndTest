@@ -1,2 +1,2 @@
-﻿# **Посилання на сайт:** <https://zaezyura.github.io/FrontEndTest/>
+﻿# **Посилання на сайт:** <https://zaezyura.github.io/frontend-test/>
 
