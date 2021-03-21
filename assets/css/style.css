@@ -393,16 +393,18 @@ body {
 @media (max-width: 768px) {
   
   .intro {
-    min-height: 736px;
-    background-size: contain;
+    background-position-x: 70%;
+    /* min-height: 736px; */
+    /* background-size: contain; */
   }
 
   .intro-inner {
     width: 100%;
+    padding-left: 15px;
   }
 
   .intro-text {
-    padding-right: 40px;
+    padding-right: 180px;
   }
 
   .intro-footer {
@@ -427,7 +429,7 @@ body {
     box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
 
     border: none;
-    opacity: .8 ;
+    opacity: .9 ;
   
     position: fixed;
     top: 0;

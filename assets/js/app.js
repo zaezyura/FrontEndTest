@@ -1,47 +1,29 @@
-$(function() {
+const burgerButton = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
 
-    const header = $("#header"),
-          introH = $("#intro").innerHeight();
-          scrollOffset = $(window).scrollTop();
+burgerButton.onclick = function() {
+    nav.classList.toggle('active');
+    burgerButton.classList.toggle('active');
+}
 
+const questions = document.querySelectorAll('.questions-header');
 
-    // Fixed Header
-    checkScroll(scrollOffset);
-
-    $(window).on("scroll", function() {
-
-        scrollOffset = $(this).scrollTop();
-
-        checkScroll(scrollOffset);
-        
-    });
-
-    function checkScroll() {
-        if(scrollOffset >= introH) {
-            header.addClass("fixed");
-        } else {
-            header.removeClass("fixed");
-        }
+for (let item of questions) {
+  
+    item.onclick = function () {
+        item.parentNode.classList.toggle('active');
     }
+}
 
-    // Accordion
-    $("[data-collapse]").on("click", function(event) {
-        event.preventDefault();
+const header = document.querySelector('.header');
+let introHeight = document.querySelector('.intro').clientHeight;
 
-        const $this = $(this),
-            blockId = $this.data("collapse");
-
-        
-        $this.parent().toggleClass("active");
-        
-    });
-
-    // Menu nav toggle
-    $("#nav-toggle").on("click", function(event) {
-        event.preventDefault();
-
-        $(this).toggleClass("active")
-        $("#nav").toggleClass("active");
-    })
-
-});
+document.addEventListener('scroll', function() {
+    let scroll = window.pageYOffset;
+    
+    if (scroll >= introHeight) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+})
