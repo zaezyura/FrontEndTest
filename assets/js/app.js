@@ -15,15 +15,15 @@ for (let item of questions) {
     }
 }
 
-const header = document.querySelector('.header');
-let introHeight = document.querySelector('.intro').clientHeight;
+// const header = document.querySelector('.header');
+// let introHeight = document.querySelector('.intro').clientHeight;
 
-document.addEventListener('scroll', function() {
-    let scroll = window.pageYOffset;
+// document.addEventListener('scroll', function() {
+//     let scroll = window.pageYOffset;
     
-    if (scroll >= introHeight) {
-        header.classList.add('fixed');
-    } else {
-        header.classList.remove('fixed');
-    }
-})
+//     if (scroll >= introHeight) {
+//         header.classList.add('fixed');
+//     } else {
+//         header.classList.remove('fixed');
+//     }
+// })

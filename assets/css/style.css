@@ -394,8 +394,6 @@ body {
   
   .intro {
     background-position-x: 70%;
-    /* min-height: 736px; */
-    /* background-size: contain; */
   }
 
   .intro-inner {
@@ -419,10 +417,7 @@ body {
   }
 
   .header {
-    padding: 0;
-  }
-
-  .header.fixed {
+    /* padding: 0; */
     padding: 10px 0;
   
     background-color: #e2eaed;
@@ -438,8 +433,12 @@ body {
     
     transform: translate3d(0, 0, 0);
   }
+
+  /* .header.fixed {
+   
+  } */
   
-  .header.fixed .header-logo {
+  .header .header-logo {
     padding: 0;
   }
   
@@ -484,7 +483,6 @@ body {
     left: 0;
 
     background-color:  #e2eaed;
-    opacity: .8 ;
 
     border-bottom-right-radius: 28.5px;
     border-bottom-left-radius: 28.5px;
