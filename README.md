@@ -1,4 +1,4 @@
-﻿# **Посилання на сайт:** <https://zaezyura.github.io/frontend-test/>
+﻿## **Посилання на сайт:** <https://zaezyura.github.io/frontend-test/>
  ## Посилання на шаблон: https://drive.google.com/file/d/1IE1dm5rY4yC6NYDuXdGka0MhS-kJkjh_/view?usp=sharing
  ## ТЗ
  1.   Зверстати   БЕЗ   використання сітки  Botstrap чи інших фреймворків (js плагіни юзати можна: modal, tooltip і т.д.)
